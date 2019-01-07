@@ -37,13 +37,19 @@
         </configuration>
       </plugin>
 
+<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+
     </plugins>
   </build>
 
 <distributionManagement>
    <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/youssef/</url>
+      <url>http://172.18.0.3:8081/repository/youssef/</url>
    </snapshotRepository>
 </distributionManagement>
 </project>
